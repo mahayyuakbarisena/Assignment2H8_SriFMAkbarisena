@@ -1,7 +1,3 @@
-// Get Param Get
-
-
-
 // Get All Param
 const nama = document.getElementById("nama_tampil").innerText;
 const role = document.getElementById("role_tampil").innerText;
@@ -49,8 +45,24 @@ attr_value.value = email;
 email_form.setAttributeNode(attr_value);
 
 function update(){
-    let nama_update = document.getElementById("nama").getAttribute("value");
-    console.log(nama_update);
+    const nama_update = document.getElementById("nama").value;
+    document.getElementById("nama_tampil").innerText = nama_update;
+
+    const role_update = document.getElementById("role").value;
+    document.getElementById("role_tampil").innerText = role_update;
+
+    const availability_update = document.getElementById("availability").value;
+    document.getElementById("availability_tampil").innerText = availability_update;
+
+    const usia_update = document.getElementById("usia").value;
+    document.getElementById("usia_tampil").innerText = usia_update;
+
+    const lokasi_update = document.getElementById("lokasi").value;
+    document.getElementById("lokasi_tampil").innerText = lokasi_update;
+
+    const pengalaman_update = document.getElementById("pengalaman").value;
+    document.getElementById("pengalaman_tampil").innerText = pengalaman_update;
+
+    const email_update = document.getElementById("email").value;
+    document.getElementById("email_tampil").innerText = email_update;
 }
-
-
