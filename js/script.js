@@ -65,4 +65,6 @@ function update(){
 
     const email_update = document.getElementById("email").value;
     document.getElementById("email_tampil").innerText = email_update;
+
+    alert("Success Update Data");
 }
